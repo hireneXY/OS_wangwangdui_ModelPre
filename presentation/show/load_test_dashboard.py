@@ -44,7 +44,7 @@ class LoadTestingDashboard:
     def _load_agent(self):
         """加载调参智能体模型"""
         try:
-            model_path = "models/ppo_memory_opt_final_20250620_001016.pt.pt"
+            model_path = "presentation/models/ppo_memory_opt_final_20250620_001016.pt.pt"
             checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
             
             if isinstance(checkpoint, dict) and 'model' in checkpoint:
